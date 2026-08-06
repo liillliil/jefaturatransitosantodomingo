@@ -12,12 +12,7 @@
   <link
     rel="icon"
     type="image/png"
-    href="favicon.png">
-
-  <link
-    rel="shortcut icon"
-    type="image/png"
-    href="favicon.png">
+    href="./favicon.png">
 
   <style>
     * {
@@ -29,26 +24,38 @@
       width: 100%;
       height: 100%;
       margin: 0;
+      padding: 0;
       overflow: hidden;
       background: #ffffff;
+    }
+
+    .contenedor {
+      width: 100%;
+      height: 100%;
     }
 
     iframe {
       display: block;
       width: 100%;
-      height: 100vh;
-      border: none;
+      height: 100%;
+      border: 0;
+      margin: 0;
+      padding: 0;
     }
   </style>
 </head>
 
 <body>
 
-  <iframe
-    src="https://script.google.com/macros/s/AKfycbzYLxkgz4V-0K7JnbOVaNWWzmnDurk8AxFQ9t7ZOjMwrkcxgsEbWf7HtYgTla2nwn2c/exec"
-    title="Jefatura de Tránsito Santo Domingo de los Tsáchilas"
-    allow="geolocation; clipboard-read; clipboard-write"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
+  <div class="contenedor">
+    <iframe
+      src="https://script.google.com/macros/s/AKfycbzYLxkgz4V-0K7JnbOVaNWWzmnDurk8AxFQ9t7ZOjMwrkcxgsEbWf7HtYgTla2nwn2c/exec"
+      title="Jefatura de Tránsito Santo Domingo de los Tsáchilas"
+      allow="geolocation; camera; clipboard-read; clipboard-write"
+      loading="eager"
+      referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+  </div>
 
 </body>
+</html>
